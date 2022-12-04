@@ -8,21 +8,21 @@ Better documentation with self-contained examples will be added later.
 #### Default network parameters:
 
 ```python
-        def_params = {
-            'optimizer': 'Adam',               # Gradient descent optimization algorithm. Options:
-                                               # 'Adadelta','Adagrad','Adam','AdamW','SparseAdam',
-                                               # 'Adamax','ASGD','LBFGS','NAdam','RAdam','RMSprop',
-                                               # 'Rprop','SGD'
-            'lr': 0.0001,                      # learning rate
-            'loss_function': 'CrossEntropy',   # loss function used to assess output accuracy. Options:
-                                               # 'L1', 'MSE', 'BCE', 'BCEWithLogits', 'NLL', 'PoissonNLL',
-                                               # 'CrossEntropy', 'HingeEmbedding', 'MarginRanking',
-                                               # 'TripletMargin', 'KLDiv'
-            'max_epochs': 30,                  # maximum learning epochs
-            'weights_init': 'Kaiming',         # weights initialization method (other option: 'Xavier')
-            'use_gpu_if_available': 1,         # 0 always use CPU
-            'dropout_rate': 0.25               # percentage of random units per layer whose weight to disregard in training 
-        }
+def_params = {
+    'optimizer': 'Adam',               # Gradient descent optimization algorithm. Options:
+                                       # 'Adadelta','Adagrad','Adam','AdamW','SparseAdam',
+                                       # 'Adamax','ASGD','LBFGS','NAdam','RAdam','RMSprop',
+                                       # 'Rprop','SGD'
+    'lr': 0.0001,                      # learning rate
+    'loss_function': 'CrossEntropy',   # loss function used to assess output accuracy. Options:
+                                       # 'L1', 'MSE', 'BCE', 'BCEWithLogits', 'NLL', 'PoissonNLL',
+                                       # 'CrossEntropy', 'HingeEmbedding', 'MarginRanking',
+                                       # 'TripletMargin', 'KLDiv'
+    'max_epochs': 30,                  # maximum learning epochs
+    'weights_init': 'Kaiming',         # weights initialization method (other option: 'Xavier')
+    'use_gpu_if_available': 1,         # 0 always use CPU
+    'dropout_rate': 0.25               # percentage of random units per layer whose weight to disregard in training 
+}
 ```
 
 #### Adding parameters to define network layout:
